@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    /* align-items: center; */
+
+}
+
+/* body{
+    background-color: #04062c;
+} */
+
+
+/* new navbar styling starts here */
+
+.navbar {
+    background-color: rgb(255, 123, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    border-bottom: 10px solid purple;
+    box-shadow: 0px 15px 7px rgba(116, 116, 116, 0.5);
+    font-family: 'Montserrat', sans-serif;
+position: fixed;
+}
+
+.nav-container {
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1rem;
+}
+
+#link1{
+  transform: translateX(-5px);
+}
+
+#i2 {
+    transform: translateX(-6rem);
+}
+
+#i3 {
+    transform: translateX(6rem);
+}
+
+#logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0.8rem;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    z-index: 11;
+}
+
+.nav-item {
+    font-size: 1.3rem;
+}
+
+.semi-circle {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 4rem;
+    width: 8rem;
+    border-radius: 0px 0px 150px 150px;
+    background-color: purple;
+    z-index: 3;
+    top: 6.4rem;
+    box-shadow: -11px 11px 7px 1.5px rgba(116, 116, 116, 0.5);
+}
+
+.nav-item a {
+    color: black;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+
+.nav-item a:hover {
+    background-color: rgb(255, 255, 255);
+    transition: 0.1s ease-in-out;
+    text-decoration: underline;
+}
+
+#l2{
+  transform: translateX(-0.6rem);
+}
+
+.line-style{
+  display: inline-block;
+font-size: 2rem;
+}
+
+/* new navbar styling ends here */
+
+.c-container , .e-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8rem;
+    margin-bottom: 2.5rem;
+    margin-left: 1rem;  
+    margin-right: 1rem; 
+width: 77rem;
+height: 50rem;
+}
+
+
+.main .navbar{
+    background: #ff8822;
+    height: 80px;
+    width: 100%;
+}
+
+.navbar img{
+    height: 60px;
+    width: 60px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+
+
+.navbar h1{
+    padding-left: 0px;
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+
+}
+
+.table-wrapper-scroll-y .my-custom-scrollbar{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    font: 11px Arial;
+    line-height: 1;
+    font-family: 'robotoregular',sans-serif;
+    color: #333333;
+    list-style: none;
+    border-collapse: collapse;
+    border-spacing: 0;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    margin-left: 100px;
+}
+
+.table-wrapper-scroll-y .my-custom-scrollbar{
+    height: 200px;
+    width: 600px;
+}
+
+.my-custom-scrollbar {
+    position: relative;
+    height: 300px;
+    width: 700px;
+    overflow: auto;
+    margin-left: 50px;
+    margin-top: 100px;
+
+    }
+    .table-wrapper-scroll-y {
+    display: block;
+    }

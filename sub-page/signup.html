@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign up page</title>
+    <link rel="stylesheet" href="/css/signup.css">
+</head>
+<body>
+        <div class="main">
+            <div class="navbar">
+                <a href="../exp11.html"><img src="/images/btn.png" alt=""></a>
+            </div>
+            <div class="container">
+                    <form  id="form1">             
+                            <h3>CREATE ACCOUNT</h3><br><br>
+                            <input type="email" name="email" placeholder="EMAIL" required><br>
+                            <input type="password" name="" placeholder="PASSWORD" required><br>
+                            <input type="password" name="" placeholder="CONFIRM PASSWORD" required><br>
+                            
+                            <div class="btn-box">
+                            <center> <button type="button" id="next1">NEXT</button></center>
+                                
+                               
+                            </div>
+                    </form>
+
+
+
+
+                    <form  id="form2">             
+                        <h3>PERSONAL INFO</h3><br><br>
+                         <input type="text" name="" placeholder="FIRST NAME" required><br>
+                         <input type="text" name="" placeholder="LAST NAME" required><br>
+                         <input type="number" name="" placeholder="PHONE NUMBER" required><br>
+                         
+                         <div class="btn-box">
+                             <button type="button" id="back1">BACK</button>
+                             <button type="button" id="next2">NEXT</button>
+                         </div>
+                 </form>
+                   
+
+                 <form  id="form3">             
+                    <h3>BASIC INFO</h3><br><br>
+                     <input type="text" name="" placeholder="COUNTRY" required><br>
+                     <input type="text" name="" placeholder="STATE" required><br>
+                     <input type="text" name="" placeholder="CITY" required><br>
+                     
+                     <div class="btn-box">
+                         <button type="button" id="back2">BACK</button>
+                         <button type="submit" id="submit">SUBMIT</button>
+                     </div>
+             </form>
+
+            
+
+            </div>
+            
+        </div>
+
+        <script>
+            var form1=document.getElementById("form1");
+            var form2=document.getElementById("form2");
+            var form3=document.getElementById("form3");
+
+            var next1=document.getElementById("next1");
+            var next2=document.getElementById("next2");
+            var back1=document.getElementById("back1");
+            var back2=document.getElementById("back2");
+
+            
+
+            next1.onclick=function(){
+                form1.style.left="-450px";
+                form2.style.left="40px";
+               
+            }
+
+            back1.onclick=function(){
+                form1.style.left="40px";
+                form2.style.left="450px";
+               
+            }
+
+            next2.onclick=function(){
+                form2.style.left="-450px";
+                form3.style.left="40px";
+               
+            }
+
+            back2.onclick=function(){
+                form2.style.left="40px";
+                form3.style.left="450px";
+               
+                
+            }
+
+
+        </script>
+
+
+
+
+
+
+</body>
+</html>

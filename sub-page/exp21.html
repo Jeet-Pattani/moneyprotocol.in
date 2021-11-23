@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 10000px;
+        }
+        .news {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+}
+
+.newsContent {
+    color: #ffffff;
+    background-color: rgba(0, 50, 82, 0.7);
+    padding: 20px;
+    border: none;
+    width: 80%;
+}
+
+.newsContent h3 {
+    font-weight: bold;
+}
+
+.newsContent form {
+    padding-top: 10px;
+}
+
+.newsContent .email{
+    width: 80%;
+}
+
+.newsContent .submit{
+    background-color: red;
+    border: solid red;
+}
+
+.close-p {
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1;
+  color: #ffffff;
+  text-shadow: 0 1px 0 #fff;
+}
+
+.close-p:hover,
+.close-p:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+}
+    </style>
+</head>
+<body>
+
+<h1>
+  Scroll Down
+</h1>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div id ="newsletter" class="news">
+    <div class="newsContent">
+        <span class="close-p" onclick="return closePopup()">&times;</span>
+        <h3>Get latest updates in technologies</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pretium vestibulum feugiat. Ut faucibus, erat id commodo lobortis, magna dui accumsan nulla.</p>
+        <form action="#">
+            <input class="email" type="email" id="email" name="email">
+            <input class="submit" type="submit" value="Send it!">
+        </form>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+    var last_scroll = 0;
+$(window).scroll(function() {
+    if (Math.abs(last_scroll - $(this).scrollTop()) >= 0) {
+        if ($(this).scrollTop() > last_scroll && $(document).scrollTop() >= $(document).height() / 1) {
+            $("#newsletter").slideDown(600, function() {
+                $('#newsletter').css('display', 'block');
+            })
+        } else {
+            closePopup();
+        }
+        last_scroll = $(this).scrollTop();
+    }
+});
+
+function closePopup() {
+    $('#newsletter').slideUp(600, function() {
+        $('#newsletter').css('display', 'none');
+    });
+}
+</script>
+</body>
+</html>

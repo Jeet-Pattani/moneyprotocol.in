@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat&display=swap');
+
+        .navbar {
+            background-color: rgb(255, 123, 0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 4rem;
+            border-bottom: 10px solid purple;
+            box-shadow: 0px 15px 7px rgba(116, 116, 116, 0.5);
+font-family: 'Montserrat', sans-serif;;
+
+        }
+
+        .nav-container {
+            height: 3rem;
+            width: 95%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 1.1rem;
+        }
+
+        #i2 {
+            transform: translateX(-6rem);
+        }
+
+        #i3 {
+            transform: translateX(6rem);
+        }
+
+        #logo {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0.6rem;
+            height: 7rem;
+            width: 7rem;
+            border-radius: 50%;
+            z-index: 11;
+        }
+
+        .nav-item {
+            font-size: 1.5rem;
+        }
+
+        .semi-circle {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 4rem;
+            width: 8rem;
+            border-radius: 0px 0px 150px 150px;
+            background-color: purple;
+            z-index: 3;
+            top: 6.2rem;
+            box-shadow: -11px 11px 7px 1.5px rgba(116, 116, 116, 0.5);
+        }
+
+        .nav-item a {
+            color: black;
+            text-decoration: none;
+            padding: 0.5rem;
+        }
+
+        .nav-item a:hover {
+            background-color: whitesmoke;
+            transition: 0.1s ease-in-out;
+            text-decoration: underline;
+        }
+
+        #l1{
+            transform: translateX(2rem);
+        }
+
+        #l2{
+            transform: translateX(-2rem);
+        }
+
+        #l3{
+            transform: translateX(-3.8rem);
+        }
+
+        #l4{
+            transform: translateX(-8rem);
+        }
+
+        #l5{
+            transform: translateX(8.4rem);
+        }
+
+        #l6{
+            transform: translateX(3.78rem);
+        }
+
+        #l7{
+            transform: translateX(2rem);
+        }
+
+        #l8{
+            transform: translateX(-2rem);
+        }
+        .line-style{
+    font-size: 2rem;
+}
+
+    </style>
+</head>
+
+<body>
+    <img src="img1" alt="" id="logo">
+    <div class="semi-circle"></div>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-items line-style" id="l1">|</div>
+            <div class="nav-item" id="i1"><a href="#"> NEWS </a></div>
+            <div class="nav-items line-style" id="l2">|</div>
+            <div class="nav-items line-style" id="l3">|</div>
+            <div class="nav-item" id="i2"><a href="#"> COMMODITIES & EXCHANGE </a></div>
+            <div class="nav-items line-style" id="l4">|</div>
+            <div class="nav-items line-style" id="l5">|</div>
+            <div class="nav-item" id="i3"><a href="#"> ABOUT US </a></div>
+            <div class="nav-items line-style" id="l6">|</div>
+            <div class="nav-items line-style" id="l7">|</div>
+            <div class="nav-item" id="i4"><a href="#"> SIGNUP/LOGIN </a></div>
+            <div class="nav-items line-style" id="l8">|</div>
+        </div>
+    </nav>
+
+</body>
+
+</html>
