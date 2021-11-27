@@ -4,7 +4,7 @@
 
  let full_news_card = document.getElementById('full_news_card');
  const xhr = new XMLHttpRequest();
- xhr.open('GET', 'https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=b1ff3b8c3d2046c088d555e9bdb94078', true);
+ xhr.open('GET', 'https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=cb22a231812949f2b0bf49358f18ad2b', true);
  xhr.getResponseHeader('Content-type', 'application/json');
 
  xhr.onload = function() {
