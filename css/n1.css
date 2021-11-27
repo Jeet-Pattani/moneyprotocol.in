@@ -1,158 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Lato:wght@300&family=Merriweather:wght@300&family=Montserrat&display=swap');
 * {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    font-family: 'Comfortaa', cursive;
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
 }
 
-
-/* styling for navbar starts here */
-
-.nav-container-ml,
-#logo-ml,
-.semi-circle-ml {
-    display: none;
+body {
+    background-color: #f3f4ef;
 }
 
-.navbar {
-    background-color: rgb(255, 123, 0);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 5rem;
-    border-bottom: 7px solid green;
-    box-shadow: 0px 15px 7px rgba(116, 116, 116, 0.5);
+.main-news-container {
+    margin: 5rem 3rem;
+    border: 2px solid rgba(0, 0, 0, 0.253);
+    background-color: white;
+}
+
+.news-heading {
+    margin-left: 2rem;
+    margin-top: 4rem;
+}
+
+.news-heading h2 {
+    font-weight: 800;
+    font-size: 2.5rem;
     font-family: 'Montserrat', sans-serif;
-    ;
 }
 
-.nav-container {
-    height: 3rem;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 1.1rem;
+#news-info p {
+    text-align: left;
+    margin: 2rem 2rem;
 }
 
-#link1 {
-    transform: translateX(-5px);
-}
-
-#i2 {
-    transform: translateX(-6rem);
-}
-
-#i3 {
-    transform: translateX(6rem);
-}
-
-#logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 1.3rem;
-    height: 7rem;
-    width: 7rem;
-    border-radius: 50%;
-    z-index: 11;
-}
-
-.nav-item {
-    font-size: 1.3rem;
-}
-
-.semi-circle {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 3.8rem;
-    width: 7.6rem;
-    border-radius: 0px 0px 150px 150px;
-    background-color: green;
-    z-index: 3;
-    top: 6.83rem;
-    box-shadow: -11px 11px 7px 1.5px rgba(116, 116, 116, 0.5);
-}
-
-.nav-item a {
-    color: black;
-    text-decoration: none;
-    padding: 0.5rem;
-}
-
-.nav-item a:hover {
-    background-color: rgb(255, 255, 255);
-    transition: 0.1s ease-in-out;
-    text-decoration: underline;
-}
-
-#l2 {
-    transform: translateX(-0.6rem);
-}
-
-.line-style {
-    display: inline-block;
-    font-size: 2rem;
-}
-
-
-/* styling for navbar ends here */
-
-
-/* news container styling starts here */
-
-.mnew-wrapper {
-    width: 100%;
-}
-
-.mnews-page {
+.news-image {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 8rem;
 }
 
-.news-page {
-    display: flex;
-    position: relative;
-    margin-top: 0rem;
-    margin-bottom: 2rem;
-    align-items: center;
-    justify-content: center;
+.news-image img {
+    margin: 2rem 7rem;
+    box-shadow: 0px 0px 5px 3px rgba(117, 117, 117, 0.466);
 }
 
-.update-text {
-    position: sticky;
-    top: 5rem;
+.news-body {
+    margin: 1rem 1rem;
+    text-align: justify;
 }
 
-.mnews-card-dialog a {
-    color: black;
-    text-decoration: none;
+.news-body p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
 }
-
-.mnews-card-dialog a:hover {
-    color: black;
-    text-decoration: underline;
-}
-
-.full_news_card_body a {
-    color: #111111;
-    text-decoration: none;
-}
-
-.full_news_card_body a:hover {
-    color: black;
-    text-decoration: underline;
-}
-
-
-/* news container styling ends here   */
-
-
-/* media queries starts here */
 
 @media (max-width:1024px) {
     .nav-item {
@@ -255,7 +156,34 @@
         color: black;
         font-size: 0.5rem;
     }
+    .main-news-container {
+        margin: 5rem 0.5rem;
+        border: 2px solid rgba(0, 0, 0, 0.253);
+        background-color: white;
+    }
+    .news-image img {
+        height: 12rem;
+        width: 100%;
+        margin: 2rem 7rem;
+        box-shadow: 0px 0px 5px 3px rgba(117, 117, 117, 0.466);
+    }
+    .news-heading {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        margin-top: 2rem;
+    }
+    .news-heading h2 {
+        font-weight: 800;
+        font-size: 1.5rem;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .news-body p {
+        font-family: 'Lato', sans-serif;
+        font-size: 1rem;
+        font-weight: 800;
+    }
+    #news-info p {
+        text-align: left;
+        margin: 1rem 0.5rem;
+    }
 }
-
-
-/* media queries end here */
