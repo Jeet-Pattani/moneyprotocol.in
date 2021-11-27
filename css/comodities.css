@@ -111,7 +111,7 @@ body {
 
 /*currency converter styling starts here*/
 
-.calc-container {
+.container {
     width: 450px;
     margin-top: 5rem;
 }
@@ -121,7 +121,7 @@ h1 {
     margin-bottom: 0.5em;
 }
 
-.calc-container .box {
+.container .box {
     width: 100%;
     display: flex;
 }
@@ -172,7 +172,7 @@ input {
     margin: 0.5em 0;
 }
 
-.calc-container button:hover {
+.container button:hover {
     transition: 0.1s ease-in-out;
     background-color: rgb(72, 72, 255);
     color: white;
