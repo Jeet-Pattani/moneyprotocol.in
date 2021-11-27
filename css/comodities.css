@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
-
-
-
-*{
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -10,23 +7,22 @@
     box-sizing: border-box;
     font-family: 'Comfortaa', cursive;
     /* align-items: center; */
-
 }
 
-body{
+body {
     background-color: #f3f4ef;
-
 }
-
 
 
 /* new navbar styling starts here */
 
-.nav-container-ml , #logo-ml , .semi-circle-ml {
+.nav-container-ml,
+#logo-ml,
+.semi-circle-ml {
     display: none;
-  }
+}
 
-  .navbar {
+.navbar {
     background-color: rgb(255, 123, 0);
     display: flex;
     align-items: center;
@@ -34,8 +30,8 @@ body{
     height: 5rem;
     border-bottom: 7px solid green;
     box-shadow: 0px 15px 7px rgba(116, 116, 116, 0.5);
-    font-family: 'Montserrat', sans-serif;;
-
+    font-family: 'Montserrat', sans-serif;
+    ;
 }
 
 .nav-container {
@@ -47,8 +43,8 @@ body{
     font-size: 1.1rem;
 }
 
-#link1{
-  transform: translateX(-5px);
+#link1 {
+    transform: translateX(-5px);
 }
 
 #i2 {
@@ -93,7 +89,6 @@ body{
     padding: 0.5rem;
 }
 
-
 .nav-item a:hover {
     background-color: rgb(255, 255, 255);
     transition: 0.1s ease-in-out;
@@ -101,36 +96,41 @@ body{
     text-decoration: underline;
 }
 
-#l2{
-  transform: translateX(-0.6rem);
+#l2 {
+    transform: translateX(-0.6rem);
 }
 
-.line-style{
-  display: inline-block;
-font-size: 2rem;
+.line-style {
+    display: inline-block;
+    font-size: 2rem;
 }
 
 
 /* new navbar styling ends here */
 
+
 /*currency converter styling starts here*/
 
-.container{
+.calc-container {
     width: 450px;
     margin-top: 5rem;
 }
-h1{
+
+h1 {
     color: #364547;
     margin-bottom: 0.5em;
 }
-.container .box{
+
+.calc-container .box {
     width: 100%;
     display: flex;
 }
-.box div{
+
+.box div {
     width: 100%;
 }
-select{
+
+select {
     width: 95%;
     height: 40px;
     font-size: 1em;
@@ -143,7 +143,8 @@ select{
     border-radius: 10px;
     border: none;
 }
-input{
+
+input {
     width: 95%;
     height: 40px;
     font-size: 1em;
@@ -154,7 +155,8 @@ input{
     outline: none;
     padding: 0 1em;
 }
-.btn{
+
+.btn {
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -170,33 +172,33 @@ input{
     margin: 0.5em 0;
 }
 
-.container button:hover{
+.calc-container button:hover {
     transition: 0.1s ease-in-out;
     background-color: rgb(72, 72, 255);
     color: white;
 }
 
+
 /*currency converter styling ends here*/
 
-
-
-.c-container{
+.c-container {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 8rem;
     margin-bottom: 2.5rem;
-width: 100%;
-height: 50rem;
+    width: 100%;
+    height: 50rem;
 }
 
-#c-wrapper , #e-wrapper{
+#c-wrapper,
+#e-wrapper {
     display: flex;
     width: 100%;
     height: 50rem;
 }
 
-.e-container{
+.e-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -207,24 +209,19 @@ height: 50rem;
 }
 
 
+/* styling for widgets heading starts here */
 
-    /* styling for widgets heading starts here */
-
-#c-heading h1{
+#c-heading h1 {
     margin-left: 1rem;
     margin-top: 10rem;
     margin-bottom: -5rem;
 }
 
-#e-heading h1{
+#e-heading h1 {
     margin-left: 1rem;
     margin-top: 10rem;
     margin-bottom: -4rem;
 }
 
-    /* styling for widgets heading ends here */
 
-
-
-
-    
+/* styling for widgets heading ends here */
